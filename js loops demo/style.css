@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+.output-box {
+    background: white;
+    margin: 20px auto;
+    padding: 15px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+#output {
+    margin-top: 10px;
+    font-family: monospace;
+}
