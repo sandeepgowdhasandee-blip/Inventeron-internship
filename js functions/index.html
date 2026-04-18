@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Functions Live Demo</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.btn-container {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #f8f9fc;
+    transform: scale(1.05);
+}
+
+#output {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>JavaScript Functions Live Demo</h1>
+
+<div class="btn-container">
+    <button onclick="functionDeclaration()">Function Declaration</button>
+    <button onclick="functionExpression()">Function Expression</button>
+    <button onclick="arrowFunction()">Arrow Function</button>
+    <button onclick="parameterDemo()">Parameters Demo</button>
+    <button onclick="callbackDemo()">Callback Demo</button>
+</div>
+
+<div id="output">Click a button to see output</div>
+
+<script>
+// Function Declaration
+function functionDeclaration() {
+    document.getElementById("output").innerHTML =
+        "This is a Function Declaration!";
+}
+
+// Function Expression
+const functionExpression = function() {
+    document.getElementById("output").innerHTML =
+        "This is a Function Expression!";
+};
+
+// Arrow Function
+const arrowFunction = () => {
+    document.getElementById("output").innerHTML =
+        "This is an Arrow Function!";
+};
+
+// Parameters Demo
+function parameterDemo() {
+    greet("Pavithra");
+}
+
+function greet(name) {
+    document.getElementById("output").innerHTML =
+        "Hello " + name + " 👋";
+}
+
+// Callback Demo
+function callbackDemo() {
+    processUserInput("JavaScript", displayMessage);
+}
+
+function processUserInput(name, callback) {
+    callback(name);
+}
+
+function displayMessage(name) {
+    document.getElementById("output").innerHTML =
+        name + " is powerful!";
+}
+</script>
+
+</body>
+</html>

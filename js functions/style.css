@@ -1,0 +1,65 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #bdd1ef;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            width: 60%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        /* Different colors for each function */
+        .declaration {
+            background: linear-gradient(135deg, #eb876e, #feb47b);
+        }
+
+        .expression {
+            background: linear-gradient(135deg, #8b59c0, #2575fc);
+        }
+
+        .arrow {
+            background: linear-gradient(135deg, #51bab1, #38ef7d);
+        }
+
+        .callback {
+            background: linear-gradient(135deg, #edae61, #e3cd69);
+            color: black;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+            opacity: 0.9;
+        }
+
+        form {
+            margin-top: 10px;
+        }
